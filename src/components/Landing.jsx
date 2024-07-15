@@ -1,6 +1,10 @@
 import React from 'react';
-import "../css/landing.css"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+
 function Landing() {
+  
+  
   return (
     <div className="relative w-screen overflow-x-hidden bg-[#B3001B]">
       {/* Navbar */}
@@ -35,18 +39,6 @@ function Landing() {
         </div>
         <div className="finalbg bg-[#B3001B] z-10 h-screen w-screen absolute"></div>
       </section>
-
-      <div className="track absolute flex items-center justify-center w-full top-[53%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[40]">
-        <div className="emoji flex items-center justify-center w-44 h-44 bg-[#AD2E24] rounded-full border-gradient">
-          <div className="emoji-face relative w-full h-full flex items-center justify-center">
-            <div className="eyes flex justify-between absolute top-1/3 w-16">
-              <div className="eye bg-black rounded-full w-5 h-5"></div>
-              <div className="eye bg-black rounded-full w-5 h-5"></div>
-            </div>
-            <div className="mouth absolute bottom-1/4 w-7 h-10 bg-black rounded-full"></div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
