@@ -7,7 +7,7 @@ import About from "./components/About"
 function App() {
 
   return (
-    <div>
+    <div className="mainApp">
       <Landing/>
     </div>
   )

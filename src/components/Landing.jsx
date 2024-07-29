@@ -1,26 +1,27 @@
 import React from 'react';
 import PlushChar from "../images/PlushCharmander.avif"
-
+import Pikachu from "../images/Pikachu.png"
 function Landing() {
   return (
-    <div className="w-screen overflow-x-hidden">
-      <div className="absolute mainContentWrap  h-[70%] w-[85%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-2">
-        <div className="relative grid-item-1 h-[70%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-rows-4 gap-y-0">
-          <div className="relative item-content-1 bg-[#B1B1B1] h-[50%] w-[50%] top-1/2">
-            <h1 className="smallTagline">The pokemon encyclopedia for all generations</h1>
+    <div className="w-screen h-screen overflow-x-hidden bg-black">
+      <div className="absolute mainContentWrap  h-[70%] w-[85%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 ">
+        <div className="relative grid-item-1 h-[60%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-rows-4">
+          <div className="relative item-content-1 h-[20%] w-[40%] flex items-center gap-x-3">
+            <img src={Pikachu} className="relative pikaImage"></img>
+            <h1 className="title text-3xl text-white"><b>Poké Insight</b></h1>
           </div>
-          <div className="relative item-content-1 bg-[#B1B1B1] h-[70%] w-[90%] transform top-1/4 ">
-            <h1 className="title text-5xl">Poke Insight</h1>
+          <div className="relative item-content-1 h-[70%] w-[80%]">
+            <h1 className="title text-5xl text-white"><b><span className="text-[#FFAE03]">Pokémon Wisdom,</span> Made Simple.</b></h1>
           </div>
-          <div className="relative item-content-1 bg-[#B1B1B1] h-[80%] w-[90%]">
-            <h1 className="relative smallDesc transform -translate-y-1/2 top-1/2">Poke Insight is a Pokemon Encyclopedia which features a curated selection of information of Pokemon, Berries and more!</h1>
+          <div className="relative item-content-1 h-[100%] w-[85%] text-[2.5vh] transform top-3/4">
+            <h1 className="relative text-[#F1F1F1] text-[2.5vh] smallDesc transform -translate-y-1/2 top-1/4">Poké Insight is your go-to Pokémon encyclopedia, delivering curated, simplified insights on Pokémon, Berries, Types, and more.</h1>
           </div>
-          <div className="relative item-content-1 bg-[#B1B1B1] h-[50%] w-[30%] flex items-center justify-center">
-            <h1 className="relative button md:text-[3vh]">Get Started</h1>
+          <div className="relative item-content-1 bg-[#E67F0D] h-[60%] w-[25%] flex items-center justify-center transform top-3/4 rounded-md">
+            <h1 className="relative text-white button md:text-[2.5vh]">Get Started</h1>
           </div>
         </div>
         <div className="relative grid-item-2 h-[80%] w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <img src={PlushChar} className="relative charImage transform -translate-y-1/2 top-1/2"></img>
+          <img src={PlushChar} className="relative charImage transform -translate-y-1/2 top-1/2 rounded-lg"></img>
         </div>
       </div>
     </div>
